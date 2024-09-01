@@ -1,0 +1,355 @@
+body{
+ background-color: #778ecc;
+ font-family: Arial, sans-serif;
+ margin: auto;
+
+}
+header {
+    background-color: #859ed1;
+   
+}
+
+nav {
+    background-color: #b8c6e2;
+    padding: 3px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myname{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #5e69c7;
+    padding-bottom: 30px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #1410f0;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links .active {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #ffffff;
+    color: #160229;
+    padding: 4px 8px;
+    font-size: 22px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.about {
+    background-color: #8de685; /* Adjust the color to your preference */
+    padding: 10px 0; 
+    margin: 10px auto; /* Center the section by using auto margins */
+    width: 90%; /* Adjust the width as needed to make it centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Optional: to give rounded corners */
+    box-shadow: 5px 10px 12px rgba(107, 236, 2, 0.842); /* Optional: for a shadow effect */
+    margin-bottom: 40px;
+}
+.about:hover{
+    transform: scale(1.1);
+}
+
+.about h2 {
+    margin: 10px 0 0 20px; /* Adds 10px margin at the top, keeps other margins unchanged */
+    font-size: 35px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between; /* Ensures the image is on the right */
+    align-items: center; /* Aligns text and image vertically */
+    padding: 20px;
+   
+  }
+  
+.lefty {
+    width: 70%; /* Adjusted width to make space for the image */
+    text-align: left;
+    font-size: 21px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.rightyimg {
+    width: 15%;
+    margin-left: auto; /* Ensures the image is on the rightmost side */
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+
+.rightyimg:hover{
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
+
+.interest {
+    background-color: #a3378c;
+    padding: 10px 0; 
+    margin: 10px auto; /* Center the section by using auto margins */
+    width: 90%; /* Adjust the width as needed to make it centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Optional: to give rounded corners */
+    box-shadow: 5px 10px 12px rgba(154, 89, 216, 0.842); /* Optional: for a shadow effect */
+    margin-top: 40px;
+}
+
+.interest:hover{
+    transform: scale(1.1);
+}
+
+.interest h2 {
+    margin: 10px 0 0 20px; /* Adds 10px margin at the top, keeps other margins unchanged */
+    font-size: 35px;
+}
+
+.about h2::after, .interest h2::after {
+    content: '';
+    display: block;
+    background-color: #250544; /* Adjust the color if needed */
+    height: 4px; /* Set the desired thickness of the line */
+    width: 0; /* Initially, the width is 0 */
+    margin-top: 5px; /* Space between the heading and the line */
+    border-radius: 2px; /* Optional: Adds rounded corners to the line */
+    transition: width 0.3s ease; /* Smooth transition effect */
+}
+.about:hover h2::after, .interest:hover h2:after {
+    width: 100%; /* Set the desired width of the line when hovered */
+}
+
+.lists a{
+    text-decoration: none;
+}
+
+.last{
+    background-color: #3c0530;
+    color: whitesmoke;
+    padding: 10px 0; 
+    margin-top: 40px;   
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+}
+
+.lists{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.lists li{
+    margin: 0 15px;
+}
+.fa-facebook, .fa-linkedin-in, .fa-square-x-twitter{
+    font-size: 40px;
+    color: white;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: right;
+}
+
+.certi-body{
+    background-color: rgb(54, 159, 219);
+}
+
+.certificates .lists {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Centers items in the row */
+    padding: 0;
+    gap: 20px; /* Adds space between items */
+}
+
+.certificates .lists li {
+    flex: 1 1 30%; /* Each image takes up approximately 30% of the row */
+    max-width: 30%; /* Ensures three images per row */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 5px 10px 12px rgba(23, 22, 24, 0.473);
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.5);
+}
+
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
+
+.chead{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 75px;
+}
+
+.probody{
+    background-color: #49013a;
+    color: whitesmoke;
+}
+
+.proj{
+    background-color: #628a8f;
+    padding: 10px 0; 
+    margin: 10px auto; /* Center the section by using auto margins */
+    width: 90%; /* Adjust the width as needed to make it centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* Optional: to give rounded corners */
+    box-shadow: 5px 10px 12px rgba(154, 89, 216, 0.842); /* Optional: for a shadow effect */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.righty{
+    text-align: right;
+    width:40%;
+    font-size: 25px;
+}
+
+.leftyimg{
+    width: 40%;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.proj h3{
+    font-size: 35px;
+}
+.proj h3::after{
+    content: '';
+    display: block;
+    background-color: #5508a3; /* Adjust the color if needed */
+    height: 4px; /* Set the desired thickness of the line */
+    width: 0; /* Initially, the width is 0 */
+    margin-top: 5px; /* Space between the heading and the line */
+    border-radius: 2px; /* Optional: Adds rounded corners to the line */
+    transition: width 0.3s ease-in; /* Smooth transition effect */
+}
+
+.proj:hover{
+    transform: scale(1.1);
+}
+.proj:hover h3::after{
+    width: 100%;
+}
+
+.proj h4{
+    font-size: 20px;
+    text-decoration: dotted;
+    color: rgb(245, 225, 188);
+}
+
+.righty a{
+    text-decoration: none;
+}
+
+.projhead{
+    text-align: center;
+}
+
+.blog-body{
+    background-color: rgb(21, 56, 80);
+}
+
+.card2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #07b7d6;
+    border-radius: 10px;
+    width: 55%;
+    margin-top: 40px;
+
+}
+
+.card2 .image-container{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+}
+
+
+.card2 .image-container .overlay-text{
+    font-size: 15px;
+}
+.card2:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.blog-head{
+    color: wheat;
+    text-align: center;
+    font-size: 35px;
+}
