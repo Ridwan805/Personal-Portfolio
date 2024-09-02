@@ -353,3 +353,55 @@ footer p{
     text-align: center;
     font-size: 35px;
 }
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation on smaller screens */
+        gap: 10px; /* Add space between elements */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        width: 100%; /* Full width on small screens */
+    }
+
+    .highlight {
+        font-size: 16px; /* Smaller text for mobile */
+        padding: 5px 10px;
+    }
+
+    #myname {
+        font-size: 26px; /* Further adjustment for very small screens */
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 10px; /* Reduce padding for smaller screens */
+        width: 100%; /* Ensure full width use */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 16px; /* Smaller text for extra small devices */
+    }
+
+    .highlight {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .about {
+        padding: 10px; /* Reduce padding further for small screens */
+        width: 95%; /* Maximize use of screen space */
+    }
+
+    #myname {
+        font-size: 22px; /* Adjust heading size for small screens */
+    }
+}
