@@ -386,6 +386,20 @@ footer p{
     font-size: 45px;
 }
 
+.contact ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Adjust the icon color */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.contact ul li a:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column; /* Stack navigation on smaller screens */
