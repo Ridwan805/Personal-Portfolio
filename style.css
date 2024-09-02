@@ -1,12 +1,12 @@
 body{
- background-color: #778ecc;
- font-family: Arial, sans-serif;
- margin: auto;
+background-color: #778ecc;
+font-family: Arial, sans-serif;
+margin: auto;
 
 }
 header {
     background-color: #859ed1;
-   
+    
 }
 
 nav {
@@ -71,6 +71,7 @@ nav {
     border-radius: 10px; /* Optional: to give rounded corners */
     box-shadow: 5px 10px 12px rgba(107, 236, 2, 0.842); /* Optional: for a shadow effect */
     margin-bottom: 40px;
+    transition: transform 0.8s ease-in;
 }
 .about:hover{
     transform: scale(1.1);
@@ -86,16 +87,16 @@ nav {
     justify-content: space-between; /* Ensures the image is on the right */
     align-items: center; /* Aligns text and image vertically */
     padding: 20px;
-   
-  }
-  
+    
+    }
+    
 .lefty {
     width: 70%; /* Adjusted width to make space for the image */
     text-align: left;
     font-size: 21px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-  
+    
 .rightyimg {
     width: 15%;
     margin-left: auto; /* Ensures the image is on the rightmost side */
@@ -105,7 +106,7 @@ nav {
 
 
 .rightyimg:hover{
-    transform: scale(1.2);
+    transform: scale(1.8);
     filter: brightness(0.8);
 }
 
@@ -121,6 +122,7 @@ nav {
     border-radius: 10px; /* Optional: to give rounded corners */
     box-shadow: 5px 10px 12px rgba(154, 89, 216, 0.842); /* Optional: for a shadow effect */
     margin-top: 40px;
+    transition: transform 0.8s ease-in;
 }
 
 .interest:hover{
@@ -171,14 +173,16 @@ nav {
 .lists li{
     margin: 0 15px;
 }
-.fa-facebook, .fa-linkedin-in, .fa-square-x-twitter{
+.fa-facebook, .fa-linkedin-in, .fa-square-x-twitter, .fa-envelope, .fa-github{
     font-size: 40px;
     color: white;
+    gap: 15px;
 }
 
 footer p{
-    margin: 0 auto;
-    text-align: right;
+    margin: 0;
+    font-size: 14px;
+    color: #777777; 
 }
 
 .certi-body{
@@ -265,6 +269,7 @@ footer p{
     box-shadow: 5px 10px 12px rgba(154, 89, 216, 0.842); /* Optional: for a shadow effect */
     margin-top: 40px;
     margin-bottom: 40px;
+    transition: transform 0.3s ease-in;
 }
 
 .righty{
@@ -342,6 +347,11 @@ footer p{
 
 .card2 .image-container .overlay-text{
     font-size: 15px;
+    
+}
+
+.card2{
+    transition: transform 0.5s ease-in;
 }
 .card2:hover{
     transform: scale(1.1);
@@ -353,7 +363,28 @@ footer p{
     text-align: center;
     font-size: 35px;
 }
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh; /* Full viewport height */
+    background-color: #077c7c;
+    margin: 50px auto;
+    width: 75%;
+    border-radius: 10px ;
+    box-shadow: 5px 10px 12px rgba(154, 89, 216, 0.842);
+    transition: transform 0.3s ease ;
+}
 
+.contact:hover{
+    transform: scale(1.1);
+}
+
+.contact h2{
+    font-size: 45px;
+}
 
 @media (max-width: 768px) {
     nav {
@@ -373,7 +404,7 @@ footer p{
     }
 
     #myname {
-        font-size: 26px; /* Further adjustment for very small screens */
+        font-size: 45px; /* Further adjustment for very small screens */
     }
 
     .about h2 {
@@ -385,6 +416,8 @@ footer p{
         width: 100%; /* Ensure full width use */
     }
 }
+
+
 
 @media (max-width: 480px) {
     .nav-links a {
@@ -404,4 +437,14 @@ footer p{
     #myname {
         font-size: 22px; /* Adjust heading size for small screens */
     }
+}
+
+@media (max-width: 1000px) {
+    .card2 {
+        width: 75%;
+    }
+    .card2 .image-container {
+        width: 80%;
+    }
+    
 }
