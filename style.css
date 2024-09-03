@@ -431,11 +431,38 @@ footer p{
     }
 }
 
+@media (max-width: 800px) {
+    .card {
+        flex-direction: column; /* Stack the image on top of the text */
+        text-align: center; /* Center the text for better appearance */
+        padding: 15px;
+        margin: 20px;
+        
+    }
+
+    .rightyimg {
+        width: 80%; /* Make the image take up more space */
+        margin: 0 auto 20px auto; /* Center the image and add margin at the bottom */
+        transform: none; /* Disable image scaling */
+    }
+    .rightyimg:hover {
+        transform: none; /* Ensure no transformation happens on hover */
+        filter: none; /* Disable brightness filter */
+    }
+
+    .lefty {
+        width: 100%; /* Make text take up full width */
+        margin: 10px auto; /* Add a 10px margin around the text */
+        font-size: 17px;
+        
+    }
+}
 
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     .nav-links a {
         font-size: 16px; /* Smaller text for extra small devices */
+        
     }
 
     .highlight {
@@ -460,5 +487,36 @@ footer p{
     .card2 .image-container {
         width: 80%;
     }
+    
+}
+
+@media (max-width: 1000px) {
+    .proj .card {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+        justify-content: center; /* Center align items vertically */
+        text-align: center;
+        margin: 0 auto; /* Center the card on the page */
+    }
+
+    .proj .leftyimg {
+        width: auto; /* Set width to auto to keep natural aspect ratio */
+        max-width: 80%; /* Ensure the image doesn't exceed the width of the card */
+        max-height: 300px; /* Limit image height for visual balance */
+        object-fit: contain; /* Maintain aspect ratio without cropping */
+        display: block; /* Make it a block element to center easily */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .proj .righty {
+        text-align: center;
+        margin: 0; /* Remove the text margin */
+        padding: 0; /* Remove any padding */
+        font-size: 1rem;
+    }
+
     
 }
