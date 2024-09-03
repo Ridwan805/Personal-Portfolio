@@ -19,10 +19,11 @@ nav {
 
 #myname{
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #5e69c7;
     padding-bottom: 30px;
+    
 }
 
 .nav-links {
@@ -400,44 +401,76 @@ footer p{
     transform: scale(1.1); /* Scale up slightly on hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     nav {
-        flex-direction: column; /* Stack navigation on smaller screens */
+        display: flex;
+        flex-direction: column; /* Stack navigation elements vertically on smaller screens */
+        align-items: center; /* Center align the navigation items */
         gap: 10px; /* Add space between elements */
+        padding: 10px 0; /* Add some padding for breathing room */
     }
 
     .nav-links {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center;
-        width: 100%; /* Full width on small screens */
+        display: flex;
+        flex-direction: row; /* Stack the links vertically */
+        align-items: center; /* Center align the links */
+        gap: 10px; /* Space between links */
+        padding: 10px; /* Remove padding for a cleaner look */
     }
 
-    .highlight {
-        font-size: 16px; /* Smaller text for mobile */
-        padding: 5px 10px;
+    .nav-links a {
+        width: 100%; /* Ensure each link takes up the full width */
+        text-align: center; /* Center align the text inside the links */
+        padding: 2px 2px; /* Add some padding for easier tapping on mobile */
+        color: #000000; /* Adjust color if needed */
+        text-decoration: none; /* Remove underlines */
+        font-size: 16px; /* Adjust font size for readability */
+        transition: background-color 0.3s; /* Smooth transition for hover effects */
+    }
+
+    .nav-links a:hover {
+        background-color: #e0e0e0;
+        padding: 2px 2px;
     }
 
     #myname {
-        font-size: 45px; /* Further adjustment for very small screens */
+        font-size: 40px; /* Adjust font size for smaller screens */
+        text-align: center; /* Ensure it's centered */
+        margin: 0; /* Remove any extra margin */
     }
 
-    .about h2 {
-        font-size: 24px;
+    .about h2, .interest h2 {
+        font-size: 29px; /* Adjust section headings for mobile */
+        text-align: center; /* Center align the section headings */
+        margin-bottom: 15px; /* Add some margin below the headings */
     }
 
     .card {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
         width: 100%; /* Ensure full width use */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .highlight {
+        font-size: 13px; /* Smaller text for specific links or elements */
+        padding: 0; /* Ensure there's no extra padding */
     }
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 900px) {
     .card {
         flex-direction: column; /* Stack the image on top of the text */
         text-align: center; /* Center the text for better appearance */
         padding: 15px;
         margin: 20px;
         
+    }
+    .about, .interest{
+        transform: none;
+    }
+    .about:hover, .interest:hover{
+        transform: none;
     }
 
     .rightyimg {
