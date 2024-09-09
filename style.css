@@ -207,7 +207,8 @@ footer p{
 
 .image-container {
     position: relative;
-    width: 100%;
+    max-width: 95%;
+    max-height: 100%;
     overflow: hidden;
     box-shadow: 5px 10px 12px rgba(23, 22, 24, 0.473);
 }
